@@ -1,6 +1,6 @@
 # ViewFlipAnimator
 一种超简单纯Java实现的卡片翻转效果
-# snapshot
+# Snapshot
 <img src="https://github.com/xiepeijie/ViewFlipAnimator/blob/master/flip-snapshot.gif" width="320x">
 # Java Code
 ```
