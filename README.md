@@ -1,0 +1,2 @@
+# ViewFlipAnimator
+纯Java实现的最简单的卡片翻转效果的方式之一
