@@ -13,7 +13,7 @@ public class ViewAnimUtils {
      * 水平翻转
      * @param view target
      * @param duration time
-     * @param direction 只能传1或-1，1为从右开始翻转，-1位从左开始翻转
+     * @param direction 只能传1或-1，1为从左开始翻转，-1位从右开始翻转
      * @return 动画集合
      */
     public static AnimatorSet flip(View view, int duration, int direction) {
@@ -22,10 +22,10 @@ public class ViewAnimUtils {
         AnimatorSet animSet = new AnimatorSet();
         ObjectAnimator rotationY = new ObjectAnimator();
         rotationY.setDuration(duration).setPropertyName("rotationY");
-        rotationY.setFloatValues(0, 90*direction);
+        rotationY.setFloatValues(0, -90*direction);
         ObjectAnimator _rotationY = new ObjectAnimator();
         _rotationY.setDuration(duration).setPropertyName("rotationY");
-        _rotationY.setFloatValues(-90*direction, 0);
+        _rotationY.setFloatValues(90*direction, 0);
         _rotationY.setStartDelay(duration);
         ObjectAnimator scale = new ObjectAnimator();
         scale.setDuration(duration).setPropertyName("scaleY");
